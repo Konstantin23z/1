@@ -32,6 +32,11 @@
   border-botton: 1px solid rgba(235, 235, 240, 0.2);
  }
 
+ .navbar-light {
+  background-color: #fff;
+  color: #292d33;
+ }
+
  .header {
   padding-top: 94px;
   min-height: 100vh;
