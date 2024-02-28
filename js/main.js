@@ -3,9 +3,9 @@ const logo = document.querySelector(".logo-svg use");
 window.addEventListener("scroll", () => {
   if (this.scrollY > 1) {
     navbar.classList.add("navbar-light");
-    logo.href.baseval = "img/sprite.svg#logo-black";
+    logo.href.baseVal = "img/sprite.svg#logo-black";
   } else {
     navbar.classList.remove("navbar-light");
-    logo.href.baseval = "img/sprite.svg#logo-light";
+    logo.href.baseVal = "img/sprite.svg#logo-light";
   }
 });

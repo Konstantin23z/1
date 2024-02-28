@@ -68,7 +68,7 @@
  }
 
  .header-logo {
-  padding: 25px 50px;
+  padding: 25px 46px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
  }
@@ -88,6 +88,10 @@
   color: inherit;
  }
 
+ .header-nav-item {
+  margin-left: 10px;
+ }
+
  .header-phone {
   flex-shrink: 0;
   display: flex;
@@ -96,7 +100,8 @@
   text-decoration: none;
   font-size: 16px;
   color: inherit;
-  margin-right: 50px;
+  margin-right: 25px;
+  margin-top: -5px
  }
 
  .button {
@@ -108,7 +113,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 60px;
+  padding: 25px 55px;
   gap: 10px;
   border: 0;
   flex-shrink: 0; 
@@ -134,11 +139,13 @@
 
  .header-title {
   min-width: 1080px;
-  font-family: "Bebas Neus", sans-serif;
-  font-size: 60px;
+  font-family: "Bebas Neue";
+  font-size: 80px;
   line-height: 120%;
-  margin: 30px 0;
+  margin: 17px 21px;
   font-weight: normal;
+  letter-spacing: 0.65px;
+  word-spacing: -1.1px;
  }
 
  .header-text {
@@ -148,12 +155,16 @@
   font-size: 16px;
   line-height: 160%;
   margin-bottom: 50px;
+  padding-top: 21px;
+  padding-left: 19px;
+  letter-spacing: 0.15px;
  }
 
  .btn1 {
   width: 313px;
   height: 76px;
   cursor: pointer;
+  margin-left: 20px;
  }
 
  .features {
@@ -165,7 +176,8 @@
   display: flex;
   min-height: 168px;
   padding: 0;
-  margin-top: 500px;
+  margin-top: 530px;
+  margin-left: 19px;
   list-style: none;
   color: #fff;
  
@@ -184,6 +196,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
+  margin-bottom: 0;
  }
 
  .section {
@@ -196,6 +209,9 @@
   font-size: 60px;
   line-height: 120%;
   color: #292d33;
+  padding-left: 20px;
+  padding-top: 16px;
+  margin-top: 16px;
 
  }
 
@@ -209,6 +225,7 @@
 
  .steps-item {
   min-width: 330px;
+  padding-left: 20px;
  }
 
  .steps-num {
@@ -235,6 +252,7 @@
   color: #292d33;
   margin-top: 30px;
   margin-bottom: 10px;
+  padding-top: 7px;
  }
 
  .steps-text {
