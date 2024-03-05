@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Alliance-produktion</title>
 </head>
@@ -122,40 +123,57 @@
         </div>
       </div>
       <!-- /.header-content -->
-      <div class="features">
-        <ul class="header-features">
-          <li class="header-feature-item">
-          <svg class="icon"  width="36" height="36">
+      
+      <!-- основной блок слайдера -->
+      <div class="swiper">
+        <!-- Additional required wrapper обертка слайдера -->
+        <ul class="swiper-wrapper header-features">
+          <!-- Slides слайды -->
+          <li class="swiper-slide header-feature-item"
+          ><svg width="36" height="36">
             <use href="img/sprite1.svg#time"></use>
           </svg>
-            <p class="header-features-text">Непрерывная работа c 2017 года</p>
+          <p class="header-features-text">Непрерывная работа c 2017 года</p></li>
+          <li class="swiper-slide header-feature-item">
+              <svg width="36" height="36">
+                <use href="img/sprite1.svg#dokument"></use>
+              </svg>
+              <p class="header-features-text">Вся продукция сертифицирована</p>
           </li>
-          <li class="header-feature-item">
-          <svg class="icon"  width="36" height="36">
-            <use href="img/sprite1.svg#dokument"></use>
-          </svg>
-            <p class="header-features-text">Вся продукция сертифицирована</p>
-          </li>
-          <li class="header-feature-item">
-            <svg class="icon"  width="36" height="36">
+          <li class="swiper-slide header-feature-item">
+            <svg width="36" height="36">
               <use href="img/sprite1.svg#human"></use>
             </svg>
             <p class="header-features-text">Контроль качества на всех этапах</p>
           </li>
-          <li class="header-feature-item">
-            <svg class="icon"  width="36" height="36">
-              <use href="img/sprite1.svg#production"></use>
+          <li class="swiper-slide header-feature-item">
+            <svg width="36" height="36">
+              <use href="img/sprite1.svg#trucks"></use>
             </svg>
             <p class="header-features-text">Возможны поставки по всей России</p>
           </li>
-          <li class="header-feature-item">
-          <svg class="icon"  width="36" height="36">
-            <use href="img/sprite1.svg#trucks"></use>
-          </svg>
+          <li class="swiper-slide header-feature-item">
+            <svg width="36" height="36">
+              <use href="img/sprite1.svg#production"></use>
+            </svg>
             <p class="header-features-text">Оперативное производство</p>
           </li>
         </ul>
+        
+        <!-- If we need navigation buttons кнопки навигации -->
+        <div class="slider-buttons">
+          <div class="slider-button-prev">
+            <img src="img/arrowPrev.svg" alt="l" width="36" height="24">
+          </div>
+          <div class="slider-button-next">
+            <img src="img/ArrowNext.svg" alt="r"  width="36" height="24">
+          </div>
+        </div>
+      
+       
       </div>
+
+     
       <!-- /.features -->
      </div>
      <!-- /.container -->
@@ -166,7 +184,50 @@
     
       <div class="separator"></div>
       <h2 class="sectiot-title">схема работы</h2>
-      <ol class="steps">
+      
+      <!-- основной блок слайдера -->
+      <div class="swiper">
+        <!-- Additional required wrapper обертка слайдера -->
+        <ul class="swiper-wrapper steps">
+          <!-- Slides слайды -->
+          <li class="swiper-slide steps-item">
+            <span class="steps-num">01</span>
+            <h3 class="steps-title">Знакомство</h3>
+            <p class="steps-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.
+            </p>
+            <a href="" class="steps-link">Оставить заявку</a>
+          </li>
+          <li class="swiper-slide steps-item">
+            <span class="steps-num">02</span>
+            <h3 class="steps-title">Заключение<br> договора</h3>
+            <p class="steps-text">Лишь интерактивные прототипы призваны к ответу.</p>
+          </li>
+          <li class="swiper-slide steps-item">
+          <span class="steps-num">03</span>
+          <h3 class="steps-title">Производство</h3>
+          <p class="steps-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально
+            разнесены на независимые элементы.</p>
+          </li>
+          <li class="swiper-slide steps-item">
+            <span class="steps-num">04</span>
+            <h3 class="steps-title">Доставка</h3>
+            <p class="steps-text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях приоритизации
+              разума над эмоциями.</p>
+          </li>
+         
+        </ul>
+      
+        <!-- If we need navigation buttons кнопки навигации -->
+        <div class="slider-buttons-1">
+          <div class="slider-button-prev">
+            <img src="img/arrowPrev.svg" alt="l" width="36" height="24">
+          </div>
+          <div class="slider-button-next">
+            <img src="img/ArrowNext.svg" alt="r" width="36" height="24">
+          </div>
+        </div>
+
+     <!-- <ol class="steps">
         <li class="steps-item">
           <span class="steps-num">01</span>
           <h3 class="steps-title">Знакомство</h3>
@@ -191,13 +252,14 @@
           <p class="steps-text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях приоритизации
             разума над эмоциями.</p>
         </li>
-      </ol>
+      </ol>-->
     
    
     <!-- /.container-->
    </div>
   </section>
   <!-- /.section section-light -->
+  <Script src="js/swiper-bundle.min.js"></Script>
   <script src="js/main.js"></script>
 </body>
 </html>
