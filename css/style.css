@@ -91,7 +91,7 @@
  }
 
  .header-logo {
-  padding: 1.5625rem 2.875rem;
+  padding: 1.5625rem 3.1rem;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
  }
@@ -101,12 +101,12 @@
   display: flex;
   list-style: none;
   padding: 0;
-  padding-left: 3.125rem;
+  padding-left: 3.5rem;
   margin: 0;
  }
 
  .header-nav-item:not(:last-child) {
-  margin-right: 2%;
+  margin-right: 5.5%;
  } 
 
  .header-nav-link {
@@ -127,8 +127,8 @@
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
-  margin-right: 1.5625rem;
-  margin-top: -0.3125rem;
+  margin-right: 1.59rem;
+  margin-top: 0rem;
  }
 
  .button {
@@ -140,7 +140,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5625rem 3.4375rem;
+  padding: 1.5625rem 2.75rem;
   gap: .625rem;
   border: 0;
   flex-shrink: 0; 
@@ -179,7 +179,7 @@
   font-family: "Bebas Neue";
   font-size: 5rem;
   line-height: 120%;
-  margin: 1.0625rem 1.3125rem;
+  margin: 1.5rem 0.5rem;
   font-weight: normal;
   letter-spacing: .0406rem;
   word-spacing: -0.0688rem;
@@ -192,8 +192,8 @@
   font-size: 1rem;
   line-height: 160%;
   margin-bottom: 3.125rem;
-  padding-top: 1.3125rem;
-  padding-left: 1.1875rem;
+  padding-top: 1.1rem;
+  padding-left: 0.5rem;
   letter-spacing: .0094rem;
  }
 
@@ -201,7 +201,7 @@
   width: 19.5625rem;
   height: 4.75rem;
   cursor: pointer;
-  margin-left: 1.25rem;
+  margin-left: 0.5rem;
  }
 
  .features {
@@ -260,7 +260,7 @@
  }
 
  .section {
-  margin-top: 9.375rem;
+  margin-top:9.375rem;
   margin-bottom: 9.375rem;
  }
 
@@ -269,8 +269,8 @@
   font-size: 3.75rem;
   line-height: 120%;
   color: #292d33;
-  padding-left: 1.25rem;
-  padding-top: 1rem;
+  padding-left: 0.6rem;
+  padding-top: -2.6rem;
   margin-top: 1rem;
 
  }
@@ -280,12 +280,13 @@
   list-style: none;
   padding: 0;
   gap: 1.875rem;
-
+ 
  }
 
  .steps-item {
   min-width: 20.625rem;
-  padding-left: 1.25rem;
+  padding-left: 0.5rem;
+ 
  }
 
  .steps-num {
@@ -566,7 +567,8 @@
 
   @media (max-width: 768px){
     .container {
-      max-width: 40rem;
+      max-width: 90%;
+      margin: auto;
     }
     .header-title {
       font-size: 4rem;
