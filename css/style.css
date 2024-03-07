@@ -406,6 +406,9 @@
 
  .slider-buttons-1 {
   display: flex;
+  width: 120px;
+  height: 40px;
+  justify-content: flex-end;
  }
 
 
@@ -579,6 +582,9 @@
     }
     .header-title {
       font-size: 4rem;
+    }
+    .header-text {
+      min-width: 30rem;
     }
     
     
