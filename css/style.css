@@ -32,6 +32,7 @@
  .container {
   width: 90rem;
   margin: auto;
+  padding-left: 33px;
  }
 .navbar {
  /* background-color: rgb(12, 201, 97);*/
@@ -102,6 +103,8 @@
 
 .header-nav {
   flex-basis: 100%;
+  align-items: center;
+  height: 100%;
   display: flex;
   list-style: none;
   padding: 0;
@@ -109,14 +112,30 @@
   margin: 0;
  }
 
+ .header-nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+ }
+
  .header-nav-item:not(:last-child) {
   margin-right: 5.5%;
  } 
 
  .header-nav-link {
+  display: flex;
+  height: 100%;
+  align-items: center;
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
+  border-bottom: 2px solid rgba(235, 235, 240, 0.);
+ }
+
+ .header-nav-link:hover {
+  border-bottom: 2px solid #5c8ee6;
+  transition: 0.5s;
  }
 
  .header-nav-item {
@@ -274,8 +293,7 @@
   line-height: 120%;
   color: #292d33;
   padding-left: 0.6rem;
-  padding-top: -2.6rem;
-  margin-top: 1rem;
+  margin-top: 1px;
 
  }
 
@@ -288,6 +306,7 @@
  }
 
  .steps-item {
+  margin-top: -11px;
   min-width: 20.625rem;
   padding-left: 0.5rem;
  
@@ -345,6 +364,61 @@
   background: #5c8ee6;
   width: 2.5rem;
   margin-right: 1.25rem;
+ }
+
+ .steps-link:hover::before {
+  width: 3.75rem;
+  transition: 0.5s;
+ }
+
+ .cards {
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ .card {
+  text-decoration: none;
+  flex-basis: 33%;
+  border: 1px solid #ebebf0;
+  position: relative;
+  transition: border 0.4s;
+ }
+
+ .card:hover .card-title {
+  color: #5c8ee6;
+ }
+
+ .card:hover {
+  border-color: #5c8ee6;
+ }
+
+ .card-content {
+  padding: 2.5rem 3.125rem;
+ }
+
+ .card-title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 140%;
+  color: #292d33;
+  margin-top: 0;
+  margin-bottom: 0.625rem;
+  transition: color 0.4s;
+ }
+
+ .card-text {
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+  margin-bottom: 394px;
+ }
+
+ .card-image {
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
  }
 
  @media(max-width: 1700px) {
@@ -409,6 +483,10 @@
   width: 120px;
   height: 40px;
   justify-content: flex-end;
+ }
+
+ .card {
+  flex-basis: 50%;
  }
 
 
@@ -590,6 +668,10 @@
     
     .header-content {
       padding-top: 3rem;
+    }
+
+    .card {
+      flex-basis: 100%;
     }
   }
 
