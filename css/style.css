@@ -472,6 +472,70 @@ img.button-icon {
   border: none;
 }
 
+.trademark-cards {
+  display: flex;
+}
+.mark-2 {
+  margin-top: 167px;
+}
+
+.trademark-card {
+  flex-basis: 50%;
+  text-decoration: none;
+  border: 1px solid #ebebf0;
+  transition: border 0.4s;
+  padding: 3.125rem;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-column-gap: 50px;
+  grid-template-areas: 
+  "logo title title"
+  "logo text text";
+}
+
+.trademark-card-logo {
+  width: 100%;
+  fill: #828a99;
+  grid-area: logo;
+  padding-left: 20px;
+  padding-top: 14px;
+}
+
+.trademark-card-title {
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.75rem;
+  line-height: 160%;
+  color: #292d33;
+  grid-area: title;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.trademark-card-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828a99;
+  grid-area: text;
+  margin-top: 0px;
+  padding-left: 3px;
+}
+
+.trademark-card:hover {
+  border-color: #5c8ee6;
+}
+
+.trademark-card:hover .trademark-card-logo {
+  fill: #5c8ee6;
+}
+
+.trademark-card:hover .trademark-card-title {
+  color: #5c8ee6;
+}
+
 @media(max-width: 1700px) {
   html {
     font-size: 14px;
@@ -513,8 +577,18 @@ img.button-icon {
 
   .cards-1 .card-1 .cont .card-text {
     width: 60%;
-
   }
+
+  .trademark-card-title {
+    padding-left: 6px;
+    padding-top: 4px;
+  }
+
+  .trademark-card-text {
+    font-size: 12px;
+  }
+
+  
 
 }
 
@@ -569,7 +643,14 @@ img.button-icon {
     height: 280px;
   }
 
+  .trademark-card {
+    grid-template-columns: auto auto;
+  }
 
+  .trademark-card-text {
+    font-size: 12px;
+    margin-top: -15px;
+  }
 }
 
 @media(max-width: 992px) {
@@ -744,6 +825,14 @@ img.button-icon {
     transform: rotate(-45deg) translateY(-5px);
 
   }
+
+  .trademark-cards {
+    flex-direction: column;
+  }
+
+  .trademark-card-logo {
+    padding: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -786,10 +875,20 @@ img.button-icon {
   .header-content {
     padding-top: 3rem;
   }
+
+  .trademark-card {
+    grid-template-rows: 1fr 70px;
+    grid-template-areas:
+    "logo title"
+    "text text";
+  }
+
+  .trademark-card-text {
+    margin-top: 6px;
+  }
 }
 
 @media (max-width: 375px) {
-
 .container {
   width: 90%;
   margin: auto;
@@ -1033,7 +1132,30 @@ img.button-icon {
 .c-6 .card-title {
   margin-top: 39px;
 }
+.trademark-card {
+  grid-template-rows: 1fr 52px;
+  grid-template-areas:
+    "logo title"
+    "text text";
+}
+.tit {
+  margin-top: 138px;
+  margin-bottom: 28px;
+}
 
+.trademark-card-logo {
+  width: 150%;
+  padding-top: 0px;
+}
 
+.trademark-card-title {
+  padding-right: 0px;
+  padding-left: 16px;
+  padding-top: 2px;
+}
 
+.trademark-card-text {
+  font-size: 13px;
+  margin-top: -26px
+ }
 }
