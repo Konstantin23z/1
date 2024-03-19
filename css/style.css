@@ -249,7 +249,7 @@ img.button-icon {
 .header-feature-item {
   padding: 1.875rem 3.125rem;
   min-height: 100%;
-  width: 18rem;
+  width: 280px;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
@@ -274,6 +274,7 @@ img.button-icon {
   height: 44px;
   background-color: #5c8ee6;
 }
+
 
 .slider-button-prev,
 .slider-button-next {
@@ -648,6 +649,12 @@ img.button-icon {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  filter:grayscale(100%);
+}
+
+.clients-logo-item:hover {
+  filter: grayscale(0%);
+  
 }
 
 .client-logo {
@@ -656,6 +663,40 @@ img.button-icon {
   height: 70px;
 }
 
+.blog-buttons {
+  display: flex;
+  height: 44px;
+  background-color: #5c8ee6;
+}
+
+.blog-button-prev,
+.blog-button-next {
+    height: 100%;
+    flex-basis: 50%;
+    border: 1px solid rgba(235, 235, 240, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.blog-card {
+  display: flex;
+  position: relative;
+  min-height: 400px;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  justify-content: flex-end;
+  padding: 50px;
+}
+.blog-card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
 @media(max-width: 1700px) {
@@ -1141,7 +1182,6 @@ img.button-icon {
 
 .header-feature-item {
   min-width: 248px;
-  ;
 }
 
 .header-features-text {
@@ -1214,10 +1254,10 @@ img.button-icon {
   padding-left: 21px;
 }
 
-.slider-buttons-1 {
+/*.slider-buttons-1 {
   margin-top: -15px;
   margin-left: 272px;
-}
+}*/
 
 .next-1 {
   padding-top: 0px;
@@ -1374,5 +1414,5 @@ img.button-icon {
   .clients-logo-item {
     padding: 10px 2px 12px 2px;
   }
-  }
+  
 }
