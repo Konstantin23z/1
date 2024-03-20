@@ -685,7 +685,7 @@ img.button-icon {
   display: flex;
   position: relative;
   max-width: 90rem;
-  height: auto;
+  height: 700px;
   flex-direction: column;
   text-decoration: none;
   color: #fff;
