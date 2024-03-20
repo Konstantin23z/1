@@ -249,7 +249,6 @@ img.button-icon {
 .header-feature-item {
   padding: 1.875rem 3.125rem;
   min-height: 100%;
-  width: 280px;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
@@ -666,7 +665,9 @@ img.button-icon {
 .blog-buttons {
   display: flex;
   height: 44px;
+  width: 150px;
   background-color: #5c8ee6;
+  
 }
 
 .blog-button-prev,
@@ -683,20 +684,40 @@ img.button-icon {
 .blog-card {
   display: flex;
   position: relative;
-  min-height: 400px;
+  max-width: 90rem;
+  height: auto;
   flex-direction: column;
   text-decoration: none;
   color: #fff;
   justify-content: flex-end;
   padding: 50px;
 }
+
 .blog-card-image {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  z-index: -2;
 }
+
+.blog-card-title {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.blog-card-text {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+
 
 
 @media(max-width: 1700px) {
