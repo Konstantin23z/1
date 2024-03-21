@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   
+    
   <link rel="stylesheet" href="css/style.css">
   <title>Alliance-produktion</title>
 </head>
@@ -423,7 +425,7 @@
       <!-- Slider main container -->
       <div class="swiper blog-slider">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper wrapper-1">
           <!-- Slides -->
           <a href="#" class="swiper-slide blog-card">
             <img class="blog-card-image" src="img/Frame 42.png" alt="b">
@@ -438,26 +440,57 @@
             высокотехнологичная...</p>
           </a>
         </div>
-       
-      
-       <div class="blog-buttons">
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button blog-button-prev">
-          <img src="img/arrowPrev.svg" alt="l" width="36" height="24">
+        <div class="blog-button-footer">
+          <a href="#" class="button-link">Подробнее о компании</a>
+          <div class="blog-buttons">
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button blog-button-prev">
+              <img src="img/arrowPrev.svg" alt="l" width="36" height="24">
+            </div>
+            <div class="swiper-button blog-button-next">
+              <img src="img/ArrowNext.svg" alt="r" width="36" height="24">
+            </div>
+          </div>
         </div>
-        <div class="swiper-button blog-button-next">
-            <img src="img/ArrowNext.svg" alt="r" width="36" height="24">
-        </div>
-       </div>
-      
-        
       </div>
     </div>
     <!-- /.container -->
    </div>
    <!-- /.section section blog -->
+   <section class="cta">
+    <div class="bg-grey section-cta">
+      <img src="img/Frame 48.png" alt="cta" class="cta-image">
+      <div class="cta-form-wrapper container">
+        <form action="#" class="cta-form">
+          <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
+          <p class="cta-form-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в
+          самых сложных случаях!</p>  
+          <div class="input-group-wrapper">
+            <div class="input-group">
+              <input id="user-name" type="text" class="input" placeholder=" ">
+              <label for="user-name">имя</label>
+            </div>
+            <div class="input-group">
+              <input id="user-phone" type="tel" class="input">
+              <label for="user-phone">номер телефона</label>
+            </div>
+          </div>
+          <div class="cta-form-footer">
+            <button type="submit" class="button">отправить заявку</button>
+           <div class="notify">
+            <img src="img/shield.svg" alt="b" class="notify-icon" width="14" height="14">
+            <p class="notify-text">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную
+              конфиденциальность информации!</p>
+           </div>
+          </div>
+        </form>
+      </div>
+    </div>
+   </section>
+   <!-- /.cta -->
   
   <Script src="js/swiper-bundle.min.js"></Script>
+  
   <script src="js/main.js"></script>
 </body>
 </html>
